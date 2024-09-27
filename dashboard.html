@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, <span id="role"></span></h2>
+        <h2>Enter the value only in Percentage % </h2>
+
+        <div id="input-section">
+            <label for="input1">Value of water contains</label>
+            <input type="number" id="input1" required>
+            <label for="input2">Density</label>
+            <input type="number" id="input2" required>
+            <label for="input3">Value for Color(white) </label>
+            <input type="number" id="input3" required>
+            <label for="input4">Value for flow of paste</label>
+            <input type="number" id="input4" required>
+            <button type="button" onclick="calculate()">Calculate</button>
+
+            <div id="results"></div>
+        </div>
+
+        <div id="admin-section" style="display:none;">
+            <h3>Update Specified Values (Admin Only)</h3>
+            <label for="specifiedValue1">Fixed Value for water level</label>
+            <input type="number" id="specifiedValue1" required>
+            <label for="specifiedValue2">Fixed Value for Density</label>
+            <input type="number" id="specifiedValue2" required>
+            <label for="specifiedValue3">Fixed Value for Color(white)</label>
+            <input type="number" id="specifiedValue3" required>
+            <label for="specifiedValue4">Fixed Value Flow of paste</label>
+            <input type="number" id="specifiedValue4" required>
+            <button type="button" onclick="updateSpecifiedValues()">Update</button>
+        </div>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
