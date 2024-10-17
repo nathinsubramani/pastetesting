@@ -44,3 +44,19 @@ button:hover {
 #results {
     margin-top: 20px;
 }
+.footer{
+    bottom: 0%;
+    position: fixed;
+    text-align: center;
+    background-color: #4cae4c;
+    left: 0%;
+    width: 100%;
+}
+.header{
+    top: 0%;
+    position: fixed;
+    text-align: center;
+    background-color: #4cae4c;
+    left: 0%;
+    width: 100%;
+}
